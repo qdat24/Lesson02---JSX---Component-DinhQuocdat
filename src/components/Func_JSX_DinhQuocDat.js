@@ -1,20 +1,15 @@
-import react from 'react'
-export default function Func_JSX_DinhQuocDat(props) {
-    const users = {
-        name: "DinhQuocdat",
-        age: 20
-    };
-    return (
-        <div>
-            <h2>Function Components Demo</h2>
-            <h3>
-                Welcome to {users.name}-{users.age}
-            </h3>
-            <hr/>
-            <h3>Props:
-                <br/>fullname: {props.fullname}
-                <br/>age: {props.age}
-            </h3>
-        </div>
-    );
+
+import React from 'react'
+
+export default function DQD_FuncDemo(props) {
+  return (
+    <div>
+        <hr/>
+        <h2>Function Component Demo</h2>
+        <h3>Sử dụng thuộc tinh từ props</h3>
+        <p>UserName: {props.userName}</p>
+        <p>FullName: {props.fullName}</p>
+        <p>Age: {props.age}</p>
+    </div>
+  )
 }
